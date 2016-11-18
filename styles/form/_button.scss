@@ -1,0 +1,11 @@
+
+
+.button {
+    padding: 10px;
+    box-shadow: $gen-shadow;
+    cursor: pointer;
+    border-radius: 2px;
+    &:hover {
+        box-shadow: $gen-shadow-hover;
+    }
+}

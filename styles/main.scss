@@ -1,0 +1,74 @@
+@import "bourbon";
+@import "neat";
+@import "icons/fontello";
+@import "icons/animation";
+@import "variables";
+@import "fontstyle";
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+
+#background-image {
+    // @include background(url('../assets/succulent.jpeg'), center no-repeat #fff);
+    background-size: cover;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.95;
+    position: fixed;
+    // #image-cover {
+    //     height: 100%;
+    //     width: 100%;
+    //     opacity: 0.85;
+    //     background: linear-gradient(to bottom, rgba(#bdb7c7, 0.9), #bdb7c7)
+    // }
+}
+
+.template.admin #background-image {
+	@include background(url('../assets/succulent.jpeg'), center no-repeat #fff);
+    background-size: cover;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.95;
+    position: fixed;
+    // #image-cover {
+    //     height: 100%;
+    //     width: 100%;
+    //     opacity: 0.85;
+    //     background: linear-gradient(to bottom, rgba(#bdb7c7, 0.9), #bdb7c7)
+    // }
+}
+
+
+.main-app {
+    @include outer-container;
+    position: relative;
+}
+
+@import "menu";
+@import "form/button";
+@import "form/input";
+@import "admin/main";
+@import "admin/formbox";
+@import "gallery";
+@import "global/carousel";

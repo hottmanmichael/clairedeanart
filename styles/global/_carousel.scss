@@ -1,0 +1,44 @@
+.carousel-outer {
+    position: fixed;
+    opacity: 0;
+    display: table;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // @include transition-property(all);
+    // @include transition-duration($fall-speed);
+    // @include transition-timing-function($swift-out);
+    z-index: 5000;
+    &.in {
+        opacity: 1;
+    }
+    .carousel {
+        height: 75%;
+    }
+    .carousel-cell {
+        width: 100%; /* full width */
+        height: 720px; /* height of carousel */
+        margin-right: 10px;
+        img {
+            width: 450px;
+        }
+        &.is-selected {
+            // transform: scale(1.4);
+        }
+    }
+}
+
+.carousel-backdrop {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgba(0,0,0,.65);
+    .close-icon {
+        font-size: 35px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 5000;
+    }
+}

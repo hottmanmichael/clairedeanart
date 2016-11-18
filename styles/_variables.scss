@@ -1,0 +1,23 @@
+$dark-purple: #1B1118;
+$purple: #4A3A5C;
+$medium-purple: #7B1FA2;
+$light-purple: #C3BAD7;
+$accent-pink: #c16e86;
+$natural-green: #386147;
+$light-green: #578e53;
+$succulent: #679894;
+$rock-tan: #be8860;
+
+$swift-out: cubic-bezier(0.4, 0.0, 0.2, 1);
+$ease-out: cubic-bezier(0.0, 0.0, 0.2, 1);
+$ease-in: cubic-bezier(0.4, 0.0, 1, 1);
+$sharp: cubic-bezier(0.4, 0.0, 0.6, 1);
+$smooth: cubic-bezier(.25,.8,.25,1);
+
+$mobile: new-breakpoint(max-width 480px);
+$tablet: new-breakpoint(min-width 481px max-width 1024px);
+$desktop: new-breakpoint(min-width 1025px);
+
+$menu-shadow: 0 -1px 2px rgba(0, 0, 0, 0.22), 0 1px 2px rgba(0, 0, 0, 0.34);
+$gen-shadow: 0 1px 3px rgba(0,0,0,0.22), 0 1px 2px rgba(0,0,0,0.34);
+$gen-shadow-hover: 7px 8px 13px 5px rgba(0, 0, 0, 0.12), 0px 10px 13px 2px rgba(0, 0, 0, 0.24);
